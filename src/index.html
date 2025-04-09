@@ -3,25 +3,180 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Portfolio website</title>
+  <title>Brinlee Luke - Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index,follow">
   <meta name="description" content="TODO: Portfolio website ...">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./stylesheets/main.scss">
 </head>
 
 <body>
-  <!-- Your HTML goes here -->
-  <h1 class="display-2 text-center my-5 py-5">
-    <span class="d-block py-5 mt-5">
-      <i class="bi bi-filetype-html text-primary"></i> / 
-      <i class="bi bi-filetype-css text-danger"></i> / 
-      <i class="bi bi-filetype-js text-success"></i>
-    </span>
-    
-    Portfolio Website
-  </h1>
+  <nav class="navbar navbar-expand-lg bg-primary ps-4 navbar-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              My Projects
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="projectDescription1.html">By Brinlee Rose</a></li>
+              <li><a class="dropdown-item" href="projectDescription2.html">Roonie's Ice Cream</a></li>
+              <li><a class="dropdown-item" href="projectDescription3.html">Rose Photo</a></li>
+              <li><a class="dropdown-item" href="projectDescription4.html">Web Accesibility</a></li>
+              <li><a class="dropdown-item" href="projectDescription5.html">Web Illustrations</a></li>
+              <li><a class="dropdown-item" href="projectDescription6.html">Cardeal</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="heroText">
+      <h1>Brinlee Luke</h1>
+      <h2>Web Design and User Experience</h2>
+    </div>
+  </div>
+  
+  <section>
+    <div class="aboutMe row row-cols-1 row-cols-md-2 row-cols-lg-2">
+      <div class="col">
+        <img src="images/portrait.jpg" class="portrait img-fluid">
+      </div>
+      <div class="col">
+        <h1>About Me</h1>
+        <p>
+          Web design and UX has intrigued me since the beginning of high school. Ever since then, I have enjoyed growing my skills in design, coding, user experience, accessibility, and much more. When I am not designing or coding, you can find me spending time with my family: my wonderful husband, and sweet little baby. I also enjoy spending time improving my photography and photo editing skills. Getting out in nature is always a welcome break from a computer screen.
+        </p>
+        <button class="btn btn-outline-primary" type="button">More About Me</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="myWork">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2">
+      <div class="col">
+        <div class="card border-dark previewCard">
+          <img src="images/byBrinleeRose.JPG" class="card-img-top" alt="a family with a mom. dad, and young baby">
+          <div class="card-body">
+            <h5 class="card-title">By Brinlee Rose</h5>
+            <a href="projectDescription1.html" class="btn btn-primary previewbtn">Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-dark previewCard">
+          <img src="images/RooniesNeon.jpg" class="card-img-top" alt="Roonie's Ice Cream logo in a neon sign">
+          <div class="card-body">
+            <h5 class="card-title">Roonie's Ice Cream</h5>
+            <a href="projectDescription2.html" class="btn btn-primary previewbtn">Details</a>
+            <a href="#" class="btn btn-primary previewbtn">View Website</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-dark previewCard">
+          <img src="images/rosePhoto.png" class="card-img-top" alt="social media ad for spring portrait photo shoots">
+          <div class="card-body">
+            <h5 class="card-title">Rose Photo</h5>
+            <a href="projectDescription3.html" class="btn btn-primary previewbtn">Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-dark previewCard">
+          <img src="images/accesibility.jpg" class="card-img-top" alt="hands resting on a keyboard">
+          <div class="card-body">
+            <h5 class="card-title">Web Accessibility</h5>
+            <a href="projectDescription4.html" class="btn btn-primary previewbtn">Details</a>
+            <a href="#" class="btn btn-primary previewbtn">View Website</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-dark previewCard">
+          <img src="images/webIllustrations.png" class="card-img-top" alt="t-shirt design mockup with mountains and tent">
+          <div class="card-body">
+            <h5 class="card-title">Web Illustrations</h5>
+            <a href="projectDescription5.html" class="btn btn-primary previewbtn">Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-dark previewCard">
+          <img src="images/cardeal.jpg" class="card-img-top" alt="green car speeding down the road">
+          <div class="card-body">
+            <h5 class="card-title">Cardeal</h5>
+            <a href="projectDescription6.html" class="btn btn-primary previewbtn">Details</a>
+            <a href="#" class="btn btn-primary previewbtn">View Website</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <h2>Contact Me</h2>
+    <p>Working with you would be a pleasure</p>
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2">
+      <div class="col">
+        <p>Email</p>
+        <i class="bi bi-envelope-fill"></i>
+        <p>brinleelondon@mail.weber.edu</p>
+        <p>LinkedIn</p>
+        <i class="bi bi-linkedin"></i>
+      </div>
+      <div class="col">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Name</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Message</label>
+            <input type="text" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="bg-primary ps-5 pe-5">
+    <div class="row">
+      <div class="col d-flex justify-content-start">
+        <p>© Copyright 2025</p>
+      </div>
+      <div class="socialMedia col d-flex justify-content-end">
+        <i class="bi bi-linkedin p-2"></i>
+        <i class="bi bi-youtube p-2"></i>
+        <i class="bi bi-instagram p-2"></i>
+        <i class="bi bi-facebook p-2"></i>
+      </div>
+    </div>
+  </footer>
 
   <script type="module" src="./javascripts/main.js"></script>
 </body>

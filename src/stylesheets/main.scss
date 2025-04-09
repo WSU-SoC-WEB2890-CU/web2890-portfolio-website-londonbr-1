@@ -1,3 +1,111 @@
-/* Your styles go here */
+$primary: #8795B5;
+//primary
+$secondary: #9099A2;
+//secondary
+$success: #AE9BA6;
+//accent
+$info: #D5D5D5;
+//neutral
+
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+.ibm-plex-serif-regular {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.ibm-plex-serif-semibold {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+  
+.ibm-plex-serif-bold {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+.ibm-plex-serif-regular-italic {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+  
+.ibm-plex-serif-semibold-italic {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 600;
+    font-style: italic;
+}
+  
+.ibm-plex-serif-bold-italic {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+nav{
+    color: black;
+}
+
+a{
+    color: black;
+}
+
+.hero{
+    background-image: url(images.mainHero.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 75vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.portrait{
+    max-height: 400px;
+    border: 2rem solid $success;
+    border-radius: 10%;
+}
+
+.previewCard{
+    max-width: 350px;
+}
+
+.interests{
+    max-width: 100px;
+}
+
+.expPic{
+    max-width: 300px;
+}
+
+.rooniesMain{
+    max-width: 35vw;
+}
+
+.websiteView{
+    max-width: 500px;
+}
+
+.bbrMain{
+    max-width: 75vw;
+}
+
+.caseStudy{
+    max-width: 80vw;
+}
+
+footer{
+    height: 3.5rem;
+}
+
+i{
+    font-size: 1.5rem;
+}
