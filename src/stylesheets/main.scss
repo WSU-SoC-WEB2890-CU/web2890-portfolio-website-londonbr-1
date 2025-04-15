@@ -10,6 +10,12 @@ $info: #D5D5D5;
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
+
+
+// UNIVERSAL RULES
+
+
+
 .ibm-plex-serif-regular {
     font-family: "IBM Plex Serif", serif;
     font-weight: 400;
@@ -50,6 +56,10 @@ body{
     font-family: 'Noto Sans', sans-serif;
 }
 
+h1, h2, h3, h4{
+    font-family: 'IBM Plex Serif Semibold', serif;
+}
+
 nav{
     color: black;
 }
@@ -58,14 +68,36 @@ a{
     color: black;
 }
 
-.hero{
-    background-image: url(images.mainHero.jpg);
+
+
+// HOME PAGE
+
+
+.hero {
+    max-width: 75vw;
+    height: 65vh;
+    background-image: url(../images/mainHero.jpg);
     background-size: cover;
-    width: 100vw;
-    height: 75vh;
     background-position: center;
-    background-repeat: no-repeat;
+    display: flex;
+    color: white;
     position: relative;
+    margin-top: 3rem;
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* optional overlay for readability */
+    z-index: 1;
+  }
+
+
+.heroText {
+    position: relative;
+    z-index: 2;
+    padding: 2rem 0 0 2rem;
 }
 
 .portrait{
@@ -75,16 +107,95 @@ a{
 }
 
 .previewCard{
-    max-width: 350px;
+    max-width: 400px;
+}
+
+.contactI{
+    font-size: 4rem;
+}
+
+.textEmp{
+    font-size: 1.25rem;
+}
+
+
+// ABOUT ME PAGE
+
+
+.heroAbout{
+    max-width: 75vw;
+    height: 65vh;
+    background-image: url(../images/aboutMeHero.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    color: white;
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 3rem
+}
+
+.heroAbout::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* optional overlay for readability */
+    z-index: 1;
+  }
+
+.heroTextAbout{
+    position: relative;
+    z-index: 2;
+    padding: 2rem 0 0 2rem;
 }
 
 .interests{
     max-width: 100px;
 }
 
+.aboutPar{
+    max-width: 400px;
+}
+
+.aboutI{
+    font-size: 3rem;
+}
+
+.biz{
+    font-size: 1.5rem;
+}
+
+.bizDescrip{
+    font-size: 1.2rem;
+}
+
 .expPic{
     max-width: 300px;
 }
+
+.aboutForm{
+    max-width: 400px;
+}
+
+
+// PROJECT ONE - BY BRINLEE ROSE
+
+
+.bbrMain{
+    max-height: 60vh;
+}
+
+.caseStudy{
+    max-width: 60vw;
+}
+
+.projDes{
+    max-width: 600px;
+}
+
+
+// PROJECT TWO - ROONIES
+
 
 .rooniesMain{
     max-width: 35vw;
@@ -94,18 +205,43 @@ a{
     max-width: 500px;
 }
 
-.bbrMain{
-    max-width: 75vw;
+// PROJECT THREE - ROSE PHOTO
+
+
+.RoseHero{
+    max-width: 30vw;
 }
 
-.caseStudy{
-    max-width: 80vw;
+.RPpic{
+    max-width: 400px;
 }
+
+
+// PROJECT FOUR - WEB ACCESSIBILITY
+
+
+
+
+// PROJECT FIVE - WEB ILLUSTRATIONS
+
+
+
+// PROJECT SIX - CARDEAL
+
+
+
+
+// CONTACT PAGE
+
+
+
+// FOOTER
+
 
 footer{
     height: 3.5rem;
 }
 
-i{
+.footerI{
     font-size: 1.5rem;
 }
