@@ -28,17 +28,20 @@
             <a class="nav-link" href="about.html">About Me</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              My Projects
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="projectDescription1.html">By Brinlee Rose</a></li>
-              <li><a class="dropdown-item" href="projectDescription2.html">Roonie's Ice Cream</a></li>
-              <li><a class="dropdown-item" href="projectDescription3.html">Rose Photo</a></li>
-              <li><a class="dropdown-item" href="projectDescription4.html">Web Accesibility</a></li>
-              <li><a class="dropdown-item" href="projectDescription5.html">Web Illustrations</a></li>
-              <li><a class="dropdown-item" href="projectDescription6.html">Cardeal</a></li>
-            </ul>
+            <div class="d-flex align-items-center">
+              <a class="nav-link" href="myWork.html">
+                My Projects
+              </a>
+              <a class="nav-link dropdown-toggle dropdown-toggle-split" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="projectDescription1.html">By Brinlee Rose</a></li>
+                <li><a class="dropdown-item" href="projectDescription2.html">Roonie's Ice Cream</a></li>
+                <li><a class="dropdown-item" href="projectDescription3.html">Rose Photo</a></li>
+                <li><a class="dropdown-item" href="projectDescription4.html">Web Accesibility</a></li>
+                <li><a class="dropdown-item" href="projectDescription5.html">Web Illustrations</a></li>
+                <li><a class="dropdown-item" href="projectDescription6.html">Cardeal</a></li>
+              </ul>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="contact.html">Contact</a>
@@ -48,9 +51,14 @@
     </div>
   </nav>
 
+  <div class="container heroContact">
+    <div class="heroTextContact animate__animated animate__backInLeft">
+      <h1>Contact Me</h1>
+    </div>
+  </div>
+
   <div class="container p-5">
-    <h2 class="text-center">Contact Me</h2>
-    <p class="text-center">Working with you would be a pleasure</p>
+    <p class="text-center contactText">Working with you would be a pleasure</p>
     <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2">
       <div class="col p-5">
         <p class="textEmp">Email</p>
@@ -71,9 +79,9 @@
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Message</label>
-            <input type="text" class="form-control">
+            <textarea class="form-control messageInput" aria-label="Message"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-success">Submit</button>
         </form>
       </div>
     </div>
